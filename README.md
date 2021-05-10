@@ -52,3 +52,12 @@ _Изображения для распознавания:_
 
 ### Время обучения
 Примерно 3 минуты
+
+## Результат работы обученной сети
+
+<p>
+<img src="imgs/img2.png" width="500"/>
+<img src="imgs/img3.png" width="500"/>
+<img src="imgs/img4.png" width="500"/>
+<img src="imgs/img5.png" width="500"/>
+</p>
