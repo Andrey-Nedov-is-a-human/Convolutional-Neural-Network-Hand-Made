@@ -1,0 +1,22 @@
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\bin\Debug\Laba 2.exe.config
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\bin\Debug\Laba 2.exe
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\bin\Debug\Laba 2.pdb
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba 2.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba_2.Form1.resources
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba_2.Properties.Resources.resources
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba 2.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba 2.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba 2.exe
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba 2.pdb
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №2\Laba 2\Laba 2\obj\Debug\Laba_2.Form2.resources
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\bin\Debug\Laba 2.exe.config
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\bin\Debug\Laba 2.exe
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\bin\Debug\Laba 2.pdb
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba 2.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba_2.Form1.resources
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba_2.Form2.resources
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba_2.Properties.Resources.resources
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba 2.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba 2.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba 2.exe
+C:\Users\andre\Desktop\Политех\Лабораторки\3 курс 1 семестр\Нейронки\Лаба №3\Laba 2\Laba 2\obj\Debug\Laba 2.pdb
