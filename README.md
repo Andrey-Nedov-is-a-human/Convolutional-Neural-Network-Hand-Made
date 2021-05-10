@@ -51,9 +51,11 @@ _Изображения для распознавания:_
 Берём по небольшому набору (например 20) изображений каждого знака из соответствующей директории (по разу из каждой директории получается 4 набора) когда изображения в директории заканчиваются алгоритм обнуляет счётчик изображений для каждой директории и берёт изображения с первого.
 
 ### Время обучения
-Примерно 3 минуты
+Примерно 3 минуты<br/>
 
-<br/>## Результат работы обученной сети
+## Результат работы обученной сети
+
+[Отчёт с кодом проекта/Report with a code](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Report.pdf)
 
 <p>
 <img src="imgs/img2.png" width="500"/>
@@ -61,5 +63,3 @@ _Изображения для распознавания:_
 <img src="imgs/img4.png" width="500"/>
 <img src="imgs/img5.png" width="500"/>
 </p>
-
-[Отчёт с кодом проекта/Report with a code](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Report.pdf)
