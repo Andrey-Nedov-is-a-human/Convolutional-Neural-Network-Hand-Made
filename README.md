@@ -14,4 +14,4 @@
 - классификации изображений;
 - Разработать функцию обучения с учителем для нейтронной сети по подготовленной ранее обучающей выборке.
 
-[Полный текст задания/Full issue text]()
+[Полный текст задания/Full issue text](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Task_NN_2019_L3_CNN.pdf)
