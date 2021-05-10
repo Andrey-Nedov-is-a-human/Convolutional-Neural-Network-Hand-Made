@@ -62,4 +62,4 @@ _Изображения для распознавания:_
 <img src="imgs/img5.png" width="500"/>
 </p>
 
-[Отчёт с кодом проекта/Report with a code](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Отчет по лабораторной работе Report.pdf)
+[Отчёт с кодом проекта/Report with a code]("https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Отчет по лабораторной работе Report.pdf")
