@@ -61,4 +61,4 @@ _Изображения для распознавания:_
 <img src="imgs/img3.png" width="400"/>
 <img src="imgs/img4.png" width="400"/>
 <img src="imgs/img5.png" width="400"/>
-</p>
+</p> 
