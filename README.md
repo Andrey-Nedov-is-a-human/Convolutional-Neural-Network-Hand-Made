@@ -51,6 +51,10 @@ _Изображения для распознавания:_
 
 Методом обратного распростронения ошибки обучаем сеть на полученной выборке.
 
+## Метод обратного распространения ошибки
+
+
+
 ## Время обучения
 Примерно 3 минуты<br/><br/>
 
@@ -59,8 +63,8 @@ _Изображения для распознавания:_
 [Отчёт с кодом проекта/Report with a code](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Report.pdf)
 
 <p>
-<img src="imgs/img2.png" width="400"/>
-<img src="imgs/img3.png" width="400"/>
-<img src="imgs/img4.png" width="400"/>
-<img src="imgs/img5.png" width="400"/>
+  <img src="imgs/img2.png" width="400"/>
+  <img src="imgs/img3.png" width="400"/>
+  <img src="imgs/img4.png" width="400"/>
+  <img src="imgs/img5.png" width="400"/>
 </p> 
