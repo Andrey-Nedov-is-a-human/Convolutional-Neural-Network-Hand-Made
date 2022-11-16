@@ -1,29 +1,29 @@
-# Написание свёрточной нейронной сети для распознавания дорожных знаков, аугментация данных, обучение сети / Convolutional neural network creation for traffic sign recognition, data augmentation, neural network training
+# Convolutional neural network creation for traffic sign recognition, data augmentation, neural network training
 
-*Разработчик/Developer*
+*Developer*
 
-1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
+1. [Andrey Nedov](https://github.com/Andrey-Nedov)
 
-# Задача
+# Objective of the project
 
-*Разработать алгоритм классификации стандартизованных изображений с помощью свёрточной нейронной сети.*
+*Develop an algorithm for classifying standardized images using a convolutional neural network.*
 
-- Подготовить приложение для генерации обучающей выборки из исходного набора изображений;
-- Разработать функцию расчета свёрточной карты для выбранного ядра;
-- Разработать класс, реализующий функциональность свёрточной сети для классификации изображений;
-- Разработать функцию обучения с учителем для нейронной сети по подготовленной ранее обучающей выборке.
+- Prepare an application for generating a training dataset from an initial set of images;
+- Develop a function for calculating a convolution map for the selected kernel;
+- Develop a class that implements the functionality of a convolutional network for image classification;
+- Develop a supervised learning function for a neural network using a previously prepared training set.
 
-__Задание выполняетя на языке С# с использованием только стандартных библиотек.__ 
+__The task is performed in C# using only standard libraries.__ 
 
-_Изображения для распознавания:_
+_Images for recognition:_
 
 <img src="imgs/img1.png" width="400"/>
 
-[Полный текст задания/Full issue text](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Task_NN_2019_L3_CNN.pdf)
+[Full issue text](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Task_NN_2019_L3_CNN.pdf)
 
-# Данные
+# Dataset
 
-Было написано отдельное приложение для генерации датасета из исходных шаблонов путём аугментации данных с добавления шума, сдвигов, изменения яркости и угла поворота изображения.
+A separate application was written to generate a dataset from the original templates by augmenting the data by adding noise, shifts, changing the brightness and angle of rotation of the image.
 
 <p>
 <img src="/imgs/d1.png" width="400"/>
@@ -32,50 +32,54 @@ _Изображения для распознавания:_
 <img src="/imgs/d4.png" width="400"/>
 </p>
 
-В качестве свёрточных ядер опытным путём были подобраны следующие четрые ядра с разрешением 5x5 пикселей:
+As convolutional kernels, the following four kernels with a resolution of 5x5 pixels were empirically selected:
 
 <img src="/imgs/kernel.png" width="400"/>
 
-# Архитектура сети
+# Network architecture
 
 <img src="imgs/nn4.png" width="800"/>
 
-Сеть получает на вход четыре бинаризованных по цвету шаблона одиного знака, каждый размером 64х64 пикселя, и сжимает его до 20х20. Далее следует операция свёртки каждого шаблона с одним из ядер. Дополнительная граница изображению не дорисовывается, поэтому результатом свёртки является вектор размером 16x16х4. Потом ядром 2х2 происходит сжитие каждого свёрнутого шаблона до размера 8х8, и в итоге вектор 8х8х4 подаётся на сенсорный слой нейронной сети, откуда, проходя через скрытый слой, попадает на четыре результирующих нейрона, по одному на каждый шаблон.
+<!-- Сеть получает на вход четыре бинаризованных по цвету шаблона одиного знака, каждый размером 64х64 пикселя, и сжимает его до 20х20. Далее следует операция свёртки каждого шаблона с одним из ядер. Дополнительная граница изображению не дорисовывается, поэтому результатом свёртки является вектор размером 16x16х4. Потом ядром 2х2 происходит сжитие каждого свёрнутого шаблона до размера 8х8, и в итоге вектор 8х8х4 подаётся на сенсорный слой нейронной сети, откуда, проходя через скрытый слой, попадает на четыре результирующих нейрона, по одному на каждый шаблон. -->
 
-# Обучение сети
+The network receives four color-binarized patterns of the same character as input, each 64x64 pixels in size, and compresses it to 20x20. This is followed by the operation of convolution of each template with one of the cores. The additional border is not drawn to the image, so the result of the convolution is a 16x16x4 vector. Then the 2x2 kernel compresses each folded template to a size of 8x8, and as a result, the 8x8x4 vector is fed to the sensor layer of the neural network, from where, passing through the hidden layer, it gets to four resulting neurons, one for each template.
 
-## Алгоритм обучения сети
-100 раз:
+# Network training
 
-Берём по небольшому набору (например 20) изображений каждого знака из соответствующей директории (по разу из каждой директории получается 4 набора) когда изображения в директории заканчиваются алгоритм обнуляет счётчик изображений для каждой директории и берёт изображения с первого.
+## Network learning algorithm
+100 times:
 
-Методом обратного распростронения ошибки обучаем сеть на полученной выборке.
+<!-- Берём по небольшому набору (например 20) изображений каждого знака из соответствующей директории (по разу из каждой директории получается 4 набора) когда изображения в директории заканчиваются алгоритм обнуляет счётчик изображений для каждой директории и берёт изображения с первого. -->
 
-## Метод обратного распространения ошибки
+We take a small set (for example, 20) of images of each character from the corresponding directory (once from each directory, 4 sets are obtained) when the images in the directory run out, the algorithm resets the image counter for each directory and takes images from the first one.
 
-0. Инициализация весов небольшими случайными значениями
-1. Выполнять шаги 2 – 9 до достижения требуемой точности
-2. Для каждой пары {входной вектор, целевое значение} выполнять шаги 3 – 8
-3. Входные нейроны (Si, i = 1,2...n) формируют сигналы Si для скрытого слоя
-4. Нейроны скрытого слоя (Hj, j = 1,2...p) суммируют сигналы Hin = V0j + Σ(Si\*Vij) и применяет функцию активации  Hj = f(Hin_j), где V - веса между слоями
-5. Нейроны выходного слоя (Rk, k = 1,2...m) суммируют сигналы Rin = W0k + Σ(Hk\*Wjk) и применяет функцию активации  Rk = f(Rin_k), где W - веса между слоями
-6. Каждый выходной нейрон (Rk, k = 1,2...m) вычисляет ошибку сопоставляя результат с целевым значением σk = (Tk - Rk)\*f'(Rin_k). 
-Затем вычисляет изменение веса связи ΔWjk = a\*σk\*Hj и величину корректировки смещения W0k = a\*σk, где a - коэффицент обучения (Learning rate)
-7. Каждый скрытый нейрон (Hj, j = 1,2...p) суммирует ошибки σin_j = Σ(σk\*Wjk) и вычисляет величину ошибки, умножая значение на величину производной активационной функции
-σj = σin_j\*f'(Rin_k), затем вычисляет изменение веса связи ΔVij = a\*σj\*Si и величину корректировки смещения V0j = a\*σj
-8. Каждый выходной нейрон (Rk, k = 1,2...m) изменяет веса своих связей со скрытым слоем Wjk = Wjk_new = Wjk_old + ΔWjk. Каждый скрытый нейрон (Hj, j = 1,2...p) изменяет веса своих связей Vij = Vij_new = Vij_old + ΔVij
-9. Проверка условия прекращения работы алгоритма:
-- количество итераций
-- минимальная суммарная квадратичная ошибка
-- скорость изменения ошибки
-- (дополнительно) устойчивость снижения ошибки (контроль сходимости решения)
+We train the network on the received sample by the backpropagation error method.
 
-## Время обучения
-Примерно 3 минуты<br/><br/>
+## Backpropagation method
 
-# Результат работы обученной сети
+0. Initializing weights with small random values
+1. Follow steps 2 - 9 until the required accuracy is achieved
+2. For each pair {input vector, target value} perform steps 3 - 8
+3. Input neurons (Si, i = 1,2...n) form signals Si for the hidden layer
+4. Hidden layer neurons (Hj, j = 1,2...p) sum the signals Hin = V0j + Σ(Si\*Vij) and applies the activation function  Hj = f(Hin_j), where V - weight between layers
+5. Output layer neurons (Rk, k = 1,2...m) sum the signals Rin = W0k + Σ(Hk\*Wjk) and applies the activation function  Rk = f(Rin_k), where W - weight between layers
+6. Each output neuron (Rk, k = 1,2...m) calculates an error by comparing the result with the target value σk = (Tk - Rk)\*f'(Rin_k). 
+Then it calculates the change in the link weight ΔWjk = a\*σk\*Hj and offset adjustment amount W0k = a\*σk, where a - learning rate
+7. Each hidden neuron (Hj, j = 1,2...p) summarizes errors σin_j = Σ(σk\*Wjk) and calculates the error value by multiplying the value by the value of the derivative of the activation function
+σj = σin_j\*f'(Rin_k), then calculates the change in the link weight ΔVij = a\*σj\*Si and offset adjustment amount V0j = a\*σj
+8. Each output neuron (Rk, k = 1,2...m) changes the weights of its links to the hidden layer Wjk = Wjk_new = Wjk_old + ΔWjk. Each hidden neuron (Hj, j = 1,2...p) changes the weights of its connections Vij = Vij_new = Vij_old + ΔVij
+9. Checking the termination condition of the algorithm:
+- number of iterations
+- minimum total squared error
+- error change rate
+- (optional) stability of error reduction (convergence control of the solution)
 
-[Отчёт с кодом проекта/Report with a code](https://github.com/Andrey-Nedov-is-a-human/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Report.pdf)
+## Studying time
+Approximately 3 minutes<br/><br/>
+
+# The result of the trained network
+
+[Report with a code](https://github.com/Andrey-Nedov/Convolutional-Neural-Network-Hand-Made/tree/main/materials/Report.pdf)
 
 <p>
   <img src="imgs/img2.png" width="400"/>
