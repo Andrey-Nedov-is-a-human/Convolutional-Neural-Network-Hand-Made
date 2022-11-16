@@ -1,4 +1,4 @@
-# Convolutional neural network creation for traffic sign recognition, data augmentation, neural network training
+# Convolutional neural network for traffic sign recognition, data augmentation, neural network training
 
 *Developer*
 
