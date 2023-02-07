@@ -1,5 +1,7 @@
 # Convolutional neural network for traffic sign recognition, data augmentation, neural network training
 
+*05.04.2020*
+
 *Developer*
 
 1. [Andrey Nedov](https://github.com/Andrey-Nedov)
